@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5AE8B966-F7BD-5E1C-7E9E-3C7E6BD84AE3" name="OrderHeaders">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-19 14:26:57 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OrderHeaderId" id="DFFA4AF8-7A89-4717-11F1-DA98FFA93CEC">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-19 14:27:44 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OrderNo" id="4C86AEF3-14F2-678C-4239-67FCD9FDA6BA">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-19 14:31:14 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>99 CHAR</dataTypeSize>
+<ownDataTypeParameters>99 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address" id="148D0E82-DA8B-992A-3848-A2C95951412C">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-19 14:30:37 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>199 CHAR</dataTypeSize>
+<ownDataTypeParameters>199 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CreatedDate" id="F487B60D-A488-2997-7BE9-C4DA8ED47D50">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-19 14:31:52 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UpdatedDate" id="0565CB02-8F14-8EBF-44FA-078DA97F57E4">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-19 14:31:52 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D86F5179-52A4-5BA9-BBA1-82D6B770648E" name="OrderHeaders_PK">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-19 14:27:44 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFFA4AF8-7A89-4717-11F1-DA98FFA93CEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
