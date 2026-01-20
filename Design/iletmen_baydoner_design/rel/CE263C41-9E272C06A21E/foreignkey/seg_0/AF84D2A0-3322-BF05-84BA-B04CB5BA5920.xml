@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AF84D2A0-3322-BF05-84BA-B04CB5BA5920" containerWithKeyObject="3CA8D9AD-0528-A2AD-FFE0-3C4EBC9738F3" localFKIndex="4464E9C4-44D8-643F-3C5A-2C6BD48FAAE7" name="BranchProducts_ProductGroupTypes_FK">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:52:58 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<referredTableLongName>ProductGroupTypes</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5E7F55BA-B870-A0F1-8938-EECCFCAEEAE8</referredTableID>
+<keyObject>EDBD0866-FA88-6130-8002-47059547DF0C</keyObject>
+<referredKeyID>EDBD0866-FA88-6130-8002-47059547DF0C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ProductGroupType</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

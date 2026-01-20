@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C31AED87-8EA7-1723-2244-A0E4BC1313C7" name="Branches">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E7F55BA-B870-A0F1-8938-EECCFCAEEAE8" name="ProductGroupTypes">
 <createdBy>cosmos</createdBy>
-<createdTime>2026-01-20 07:30:39 UTC</createdTime>
+<createdTime>2026-01-20 07:43:06 UTC</createdTime>
 <ownerDesignName>iletmen_baydoner_design</ownerDesignName>
-<ordsAlias>table_2</ordsAlias>
+<ordsAlias>table_5</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="BranchId" id="60FF908C-D8A3-ADE3-5B89-57ABF149998C">
+<Column name="ProductGroupType" id="BEC45031-8FF3-43C4-5E15-12D13714EC52">
 <createdBy>cosmos</createdBy>
-<createdTime>2026-01-20 07:32:06 UTC</createdTime>
+<createdTime>2026-01-20 07:43:58 UTC</createdTime>
 <ownerDesignName>iletmen_baydoner_design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -20,9 +20,9 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ClientId" id="06A33203-8624-DB21-3060-588471C7E85F">
+<Column name="ProductGroupId" id="F1E99653-B995-1F68-78E4-DABF1B19CB4D">
 <createdBy>cosmos</createdBy>
-<createdTime>2026-01-20 07:39:11 UTC</createdTime>
+<createdTime>2026-01-20 07:46:29 UTC</createdTime>
 <ownerDesignName>iletmen_baydoner_design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -30,12 +30,12 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="7F904767-69E6-9D11-4E5B-2DC56E7C3717" referredColumn="26507975-E305-FE05-9E30-AB39DC957571"/>
+<colAssociation fkAssociation="94478E50-17E9-177F-AA5D-F6C020CCC2D7" referredColumn="3F22DACF-BB14-70DA-3999-4BC676392102"/>
 </associations>
 </Column>
-<Column name="BranchName" id="B52E79C7-DA6D-8595-F445-2CB12168482A">
+<Column name="ProductGroupTypeName" id="E59DFABF-D0B0-7D7F-CA2A-2AEAB9D32EB4">
 <createdBy>cosmos</createdBy>
-<createdTime>2026-01-20 07:39:11 UTC</createdTime>
+<createdTime>2026-01-20 07:43:58 UTC</createdTime>
 <ownerDesignName>iletmen_baydoner_design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,9 +44,21 @@
 <ownDataTypeParameters>99 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CreatedDate" id="52E1298A-38C8-7D51-A536-70595FBDB390">
+<Column name="Code" id="C25D508A-0A23-5B49-6C5A-4890C6B28181">
 <createdBy>cosmos</createdBy>
-<createdTime>2026-01-20 07:39:11 UTC</createdTime>
+<createdTime>2026-01-20 07:44:02 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>99 CHAR</dataTypeSize>
+<ownDataTypeParameters>99 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CreatedDate" id="F46240B3-8A5E-B69D-6A30-831C709711AA">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:45:35 UTC</createdTime>
 <ownerDesignName>iletmen_baydoner_design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -54,9 +66,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="UpdatedDate" id="A161D06E-FAB1-8216-6AD4-E8604F5693C1">
+<Column name="UpdatedDate" id="4615D167-A829-00DE-607C-5D6E860D565D">
 <createdBy>cosmos</createdBy>
-<createdTime>2026-01-20 07:39:22 UTC</createdTime>
+<createdTime>2026-01-20 07:45:53 UTC</createdTime>
 <ownerDesignName>iletmen_baydoner_design</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -67,25 +79,35 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E9E2E0F0-B716-4BD6-FA55-0A0ECFB9AFAA" name="Branch_PK">
+<ind_PK_UK id="EDBD0866-FA88-6130-8002-47059547DF0C" name="ProductGroupTypes_PK">
 <createdBy>cosmos</createdBy>
-<createdTime>2026-01-20 07:39:11 UTC</createdTime>
+<createdTime>2026-01-20 07:43:58 UTC</createdTime>
 <ownerDesignName>iletmen_baydoner_design</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="60FF908C-D8A3-ADE3-5B89-57ABF149998C"/>
+<colUsage columnID="BEC45031-8FF3-43C4-5E15-12D13714EC52"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="269F839F-28AC-8023-0E2F-A1EF95AFA955" name="Branch_Client_FK">
+<ind_PK_UK id="6DF43D16-63AF-8B79-4AE4-4F6C599A0911" name="ProductGroupTypes_ProductGroupTypeName_UQ">
 <createdBy>cosmos</createdBy>
-<createdTime>2026-01-20 07:39:42 UTC</createdTime>
+<createdTime>2026-01-20 07:47:25 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E59DFABF-D0B0-7D7F-CA2A-2AEAB9D32EB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FA4D8BA-E557-4EF7-B743-35298C2E11D4" name="ProductGroupTypes_ProductGroups_FK">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:46:55 UTC</createdTime>
 <ownerDesignName>iletmen_baydoner_design</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="06A33203-8624-DB21-3060-588471C7E85F"/>
+<colUsage columnID="F1E99653-B995-1F68-78E4-DABF1B19CB4D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9771AEBD-8922-97BA-CE58-09DCCDC3BB87" containerWithKeyObject="BD65A6A5-EAE1-E69E-BBEC-D57447927C83" localFKIndex="744338DF-492F-700A-4DF8-0AF98976CAF2" name="OrderHeader_Branches_FK">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:59:53 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<referredTableLongName>Branches</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C31AED87-8EA7-1723-2244-A0E4BC1313C7</referredTableID>
+<keyObject>E9E2E0F0-B716-4BD6-FA55-0A0ECFB9AFAA</keyObject>
+<referredKeyID>E9E2E0F0-B716-4BD6-FA55-0A0ECFB9AFAA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BranchId</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

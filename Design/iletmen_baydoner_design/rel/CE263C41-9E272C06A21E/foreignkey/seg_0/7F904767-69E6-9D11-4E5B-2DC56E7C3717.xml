@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7F904767-69E6-9D11-4E5B-2DC56E7C3717" containerWithKeyObject="C31AED87-8EA7-1723-2244-A0E4BC1313C7" localFKIndex="269F839F-28AC-8023-0E2F-A1EF95AFA955" name="Branch_Client_FK">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:39:42 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<referredTableLongName>Clients</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>52970A3E-4725-D9FB-D751-F28BFBB54F73</referredTableID>
+<keyObject>5B4F0455-C538-2C24-6A52-2973063607BF</keyObject>
+<referredKeyID>5B4F0455-C538-2C24-6A52-2973063607BF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ClientId</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
