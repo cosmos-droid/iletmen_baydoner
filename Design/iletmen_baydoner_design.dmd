@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="iletmen_baydoner_design" id="1D25711F-19BA-1E5B-626F-EE2D99690AF8" version="3.5">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:23:37 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>1D25711F-19BA-1E5B-626F-EE2D99690AF8</designId>
+</OSDM_Design>

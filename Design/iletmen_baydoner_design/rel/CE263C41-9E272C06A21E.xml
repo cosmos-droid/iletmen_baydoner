@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="iletmen_baydoner" id="CE263C41-06CC-9F48-0D13-9E272C06A21E" mainViewID="23E1F3FC-FD62-6093-C4A0-BB72B974AC21">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:23:38 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>980FCE9E-D688-BDF0-C89A-C9FB2DCAED45</selectedRDBMSSite>
+</relationalModel>

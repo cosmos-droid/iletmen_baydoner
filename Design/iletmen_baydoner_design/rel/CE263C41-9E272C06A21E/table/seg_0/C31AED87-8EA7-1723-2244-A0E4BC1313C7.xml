@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C31AED87-8EA7-1723-2244-A0E4BC1313C7" name="Branch">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:30:39 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BranchId" id="60FF908C-D8A3-ADE3-5B89-57ABF149998C">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:32:06 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

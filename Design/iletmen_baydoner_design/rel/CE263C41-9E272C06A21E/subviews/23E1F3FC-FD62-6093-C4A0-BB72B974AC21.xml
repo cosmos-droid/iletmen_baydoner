@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="iletmen_baydoner" id="23E1F3FC-FD62-6093-C4A0-BB72B974AC21">
+<createdBy>cosmos</createdBy>
+<modifiedBy>cosmos</modifiedBy>
+<createdTime>2026-01-20 07:24:02 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="52970A3E-4725-D9FB-D751-F28BFBB54F73" otype="Table" vid="8F234702-F1CC-E6BF-DFC5-02FE7AE90F7F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="3" y="24" width="234" height="284"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C31AED87-8EA7-1723-2244-A0E4BC1313C7" otype="Table" vid="BB872DCE-CB10-E319-4662-F3DEDD60CA2C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="255" y="27" width="229" height="280"/>
+</OView>
+</objectViews>
+</Diagram>

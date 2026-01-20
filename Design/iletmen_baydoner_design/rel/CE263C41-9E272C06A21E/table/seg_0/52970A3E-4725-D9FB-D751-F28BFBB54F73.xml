@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52970A3E-4725-D9FB-D751-F28BFBB54F73" name="Client">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:24:25 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ClientId" id="26507975-E305-FE05-9E30-AB39DC957571">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:25:00 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ClientName" id="C9958F52-A0BD-9E65-F9D4-A040B4922C79">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:26:50 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>99 CHAR</dataTypeSize>
+<ownDataTypeParameters>99 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CreatedDate" id="7C0833D2-9D58-F883-40D8-C2AE099595EB">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:26:50 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UpdatedDate" id="D9F8444D-92CD-1411-890D-85773D6F8F8A">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:27:01 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B4F0455-C538-2C24-6A52-2973063607BF" name="Client_PK">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:26:50 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26507975-E305-FE05-9E30-AB39DC957571"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C95CCB8-7802-9265-D7B3-8B7FB99F0FC1" name="Client_ClientName_UQ">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 07:29:13 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9958F52-A0BD-9E65-F9D4-A040B4922C79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
