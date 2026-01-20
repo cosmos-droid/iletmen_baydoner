@@ -3,18 +3,14 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Microsoft.Identity.Client;
 using iletmenbaydoner.Entities.Core;
+using iletmenbaydoner.Entities.Concrete;
 
 
 public class iletmenbaydonerDatabaseContext : DbContext
 {
     //entities
+    public DbSet<Client> Clients { get; set; }
 
-
-    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    // {
-    //     //optionsBuilder.UseSqlServer("");
-    //     base.OnConfiguring(optionsBuilder);
-    // }
 
     public iletmenbaydonerDatabaseContext(DbContextOptions<iletmenbaydonerDatabaseContext> options) : base(options)
     {

@@ -48,6 +48,7 @@
 <createdBy>cosmos</createdBy>
 <createdTime>2026-01-20 07:56:30 UTC</createdTime>
 <ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -59,6 +60,7 @@
 <createdBy>cosmos</createdBy>
 <createdTime>2026-01-20 07:57:25 UTC</createdTime>
 <ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
