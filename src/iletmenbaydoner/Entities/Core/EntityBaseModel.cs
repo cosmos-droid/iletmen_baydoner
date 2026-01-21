@@ -5,8 +5,8 @@ namespace iletmenbaydoner.Entities.Core
     public class EntityBaseModel
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-        public DateTime CreatedDate { get; set; }
-        public DateTime? UpdatedDate { get; set; }
+        public DateTimeOffset CreatedDate { get; set; }
+        public DateTimeOffset? UpdatedDate { get; set; }
 
     }
 }

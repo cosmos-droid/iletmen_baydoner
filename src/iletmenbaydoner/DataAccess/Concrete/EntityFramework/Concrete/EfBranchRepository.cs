@@ -1,0 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using iletmenbaydoner.Entities.Concrete;
+using iletmenbaydoner.DataAccess.Core;
+using iletmenbaydoner.DataAccess.Abstract;
+
+namespace iletmenbaydoner.DataAccess.Concrete.EntityFramework.Concrete
+{
+    public class EfBranchRepository : EfRepositoryBase<Branch, iletmenbaydonerDatabaseContext>, IBranchDal
+    {
+        public EfBranchRepository(iletmenbaydonerDatabaseContext context) : base(context)
+        {
+        }
+    }
+}

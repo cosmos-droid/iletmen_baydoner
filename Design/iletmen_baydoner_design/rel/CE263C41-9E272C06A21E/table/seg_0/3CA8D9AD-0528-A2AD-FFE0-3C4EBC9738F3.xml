@@ -56,6 +56,16 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="StockQuantity" id="3B8A6FE5-2B4D-F1EF-2BBC-9827DB6D940C">
+<createdBy>cosmos</createdBy>
+<createdTime>2026-01-20 12:00:36 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="CreatedDate" id="427598A7-5E78-844F-7CAB-0AD32F287703">
 <createdBy>cosmos</createdBy>
 <createdTime>2026-01-20 07:52:03 UTC</createdTime>
