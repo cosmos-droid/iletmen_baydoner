@@ -61,6 +61,17 @@ namespace iletmenbaydoner.Controllers
             return BadRequest(result.Message);
         }
 
+        [HttpPost(template: "updatebranchproductstockquantity")]
+        public IActionResult UpdateBranchProductStockQuantity(long branchProductId, int stockQuantity, string orderNo)
+        {
+            var result = _branchProductService.UpdateBranchProductStockQuantity(branchProductId, stockQuantity, orderNo);
+            if (result.Success)
+            {
+                return Ok(result.Message);
+            }
+            return BadRequest(result.Message);
+        }
+
         [HttpGet(template: "getall")]
         public IActionResult GetAll()
         {

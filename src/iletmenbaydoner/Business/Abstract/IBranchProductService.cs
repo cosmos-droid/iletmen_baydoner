@@ -10,6 +10,7 @@ namespace iletmenbaydoner.Business.Abstract
         IDataResult<BranchProduct> GetBranchProductById(long branchProductId);
         IDataResult<IList<BranchProduct>> GetBranchProductsByBranchId(long branchId);
         IDataResult<IList<BranchProduct>> GetAllBranchProducts();
+        IResult UpdateBranchProductStockQuantity(long branchProductId, int stockQuantity, string orderNo);
         IResult AddBranchProduct(BranchProduct branchProduct);
         IResult UpdateBranchProduct(BranchProduct branchProduct);
         IResult DeleteBranchProduct(BranchProduct branchProduct);
