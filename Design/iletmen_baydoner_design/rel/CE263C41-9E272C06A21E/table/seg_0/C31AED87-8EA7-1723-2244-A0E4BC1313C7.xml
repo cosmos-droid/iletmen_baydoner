@@ -33,6 +33,19 @@
 <colAssociation fkAssociation="7F904767-69E6-9D11-4E5B-2DC56E7C3717" referredColumn="26507975-E305-FE05-9E30-AB39DC957571"/>
 </associations>
 </Column>
+<Column name="DistrictId" id="A4FE4425-77A1-136D-E8DE-EC8CD656C546">
+<createdBy>kutay</createdBy>
+<createdTime>2026-02-05 09:24:03 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="628CD90D-34E7-2770-128B-C55696E820D4" referredColumn="F10C8217-C089-E83A-953C-39E5249171FC"/>
+</associations>
+</Column>
 <Column name="BranchName" id="B52E79C7-DA6D-8595-F445-2CB12168482A">
 <createdBy>cosmos</createdBy>
 <createdTime>2026-01-20 07:39:11 UTC</createdTime>
@@ -86,6 +99,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="06A33203-8624-DB21-3060-588471C7E85F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC2FCF60-7D8D-9137-50B6-3B29E4A8F09C" name="Branches_Districts_FK">
+<createdBy>kutay</createdBy>
+<createdTime>2026-02-05 09:24:32 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4FE4425-77A1-136D-E8DE-EC8CD656C546"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

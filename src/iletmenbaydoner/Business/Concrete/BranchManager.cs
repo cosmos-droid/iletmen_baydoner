@@ -29,6 +29,22 @@ namespace iletmenbaydoner.Business.Concrete
             }
         }
 
+        public IDataResult<Branch> GetBranchByName(string branchName)
+        {
+         
+            try
+            {
+                return new SuccessDataResult<Branch>(_branchDal.Get(b => b.BranchName == branchName));
+            }
+            catch (Exception ex)
+            {
+                return new ErrorDataResult<Branch>(message: ex.Message);
+            }        
+        
+        }
+
+
+
 
         public IResult AddBranch(Branch branch)
         {
@@ -87,6 +103,20 @@ namespace iletmenbaydoner.Business.Concrete
 
 
 
+        public IDataResult<IList<Branch>> GetBranchesByDistrictId(long districtId)
+        {
+            try
+            {
+                return new SuccessDataResult<IList<Branch>>(_branchDal.GetAll(b => b.DistrictId == districtId));
+            }
+            catch (Exception ex)
+            {
+                return new ErrorDataResult<IList<Branch>>(message: ex.Message);
+            }
+        }        
+
+
+
         public IResult UpdateBranch(Branch branch)
         {
             try
@@ -99,6 +129,8 @@ namespace iletmenbaydoner.Business.Concrete
                 return new ErrorResult(message: ex.Message);
             }
         }
+
+
     }
 
 

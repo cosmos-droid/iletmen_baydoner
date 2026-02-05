@@ -9,19 +9,19 @@ namespace iletmenbaydoner.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class BranchController : ControllerBase
+    public class DistrictController : ControllerBase
     {
-        private readonly IBranchService _branchService;
+        private readonly IDistrictService _districtService;
 
-        public BranchController(IBranchService branchService)
+        public DistrictController(IDistrictService districtService)
         {
-            _branchService = branchService;
+            _districtService = districtService;
         }
 
         [HttpGet("getbyid")]
-        public IActionResult GetById(long branchId)
+        public IActionResult GetById(long districtId)
         {
-            var result = _branchService.GetBranchById(branchId);
+            var result = _districtService.GetDistrictById(districtId);
             if (result.Success)
             {
                 return Ok(result.Data);
@@ -30,23 +30,9 @@ namespace iletmenbaydoner.Controllers
         }
 
         [HttpGet("getbyname")]
-        public IActionResult GetByName(string branchName)
+        public IActionResult GetByName(string districtName)
         {
-            var result = _branchService.GetBranchByName(branchName);
-            if (result.Success)
-            {
-                return Ok(result.Data);
-            }
-            return BadRequest(result.Message);
-        }
-
-        
-
-
-        [HttpGet("getbydistrictid")]
-        public IActionResult GetByDistrictId(long districtId)
-        {
-            var result = _branchService.GetBranchesByDistrictId(districtId);
+            var result = _districtService.GetDistrictByName(districtName);
             if (result.Success)
             {
                 return Ok(result.Data);
@@ -56,9 +42,9 @@ namespace iletmenbaydoner.Controllers
 
 
         [HttpPost(template: "add")]
-        public IActionResult Add(Branch branch)
+        public IActionResult Add(District district)
         {
-            var result = _branchService.AddBranch(branch);
+            var result = _districtService.AddDistrict(district);
             if (result.Success)
             {
                 return Ok(result.Message);
@@ -67,9 +53,9 @@ namespace iletmenbaydoner.Controllers
         }
 
         [HttpPost(template: "delete")]
-        public IActionResult Delete(Branch branch)
+        public IActionResult Delete(District district)
         {
-            var result = _branchService.DeleteBranch(branch);
+            var result = _districtService.DeleteDistrict(district);
             if (result.Success)
             {
                 return Ok(result.Message);
@@ -77,9 +63,9 @@ namespace iletmenbaydoner.Controllers
             return BadRequest(result.Message);
         }
         [HttpPost(template: "update")]
-        public IActionResult Update(Branch branch)
+        public IActionResult Update(District district)
         {
-            var result = _branchService.UpdateBranch(branch);
+            var result = _districtService.UpdateDistrict(district);
             if (result.Success)
             {
                 return Ok(result.Message);
@@ -90,25 +76,13 @@ namespace iletmenbaydoner.Controllers
         [HttpGet(template: "getall")]
         public IActionResult GetAll()
         {
-            var result = _branchService.GetAllBranches();
+            var result = _districtService.GetAllDistricts();
             if (result.Success)
             {
                 return Ok(result.Data);
             }
             return BadRequest(result.Message);
         }
-
-        [HttpGet(template: "getallbranchesbyclientid")]
-        public IActionResult GetAllBranchesByClientId(long clientId)
-        {
-            var result = _branchService.GetBranchesByClientId(clientId);
-            if (result.Success)
-            {
-                return Ok(result.Data);
-            }
-            return BadRequest(result.Message);
-        }
-
 
 
     }

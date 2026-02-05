@@ -8,10 +8,16 @@ namespace iletmenbaydoner.Entities.Concrete
     {
         public long BranchId { get; set; }
         public long ClientId { get; set; }
+        public long DistrictId { get; set; }
         public string? BranchName { get; set; }
 
         [ForeignKey("ClientId")]
         public Client? Client { get; set; }
+
+        [ForeignKey("DistrictId")]
+        public District? District { get; set; }
+
+
 
     }
 }

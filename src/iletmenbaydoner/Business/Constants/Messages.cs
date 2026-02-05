@@ -39,5 +39,11 @@ namespace iletmenbaydoner.Business.Constants
         public static string OrderDetailUpdated = "Order detail updated successfully.";
         public static string OrderDetailNotFound = "Order detail not found.";
 
+
+        public static string DistrictAdded = "District added successfully.";
+        public static string DistrictDeleted = "District deleted successfully.";
+        public static string DistrictUpdated = "District updated successfully.";
+        public static string DistrictNotFound = "District not found.";
+
     }
 }

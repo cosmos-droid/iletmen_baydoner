@@ -11,6 +11,7 @@ public class iletmenbaydonerDatabaseContext : DbContext
 {
     //entities
     public DbSet<Client> Clients { get; set; }
+    public DbSet<District> Districts {get; set;}
     public DbSet<Branch> Branches { get; set; }
     public DbSet<ProductGroup> ProductGroups { get; set; }
     public DbSet<ProductGroupType> ProductGroupTypes { get; set; }

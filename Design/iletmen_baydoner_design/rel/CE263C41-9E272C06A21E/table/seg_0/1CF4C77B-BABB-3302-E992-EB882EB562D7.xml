@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1CF4C77B-BABB-3302-E992-EB882EB562D7" name="Districts">
+<createdBy>kutay</createdBy>
+<createdTime>2026-02-05 09:14:08 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DistrictId" id="F10C8217-C089-E83A-953C-39E5249171FC">
+<createdBy>kutay</createdBy>
+<createdTime>2026-02-05 09:14:38 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DistrictName" id="FB2D1ACD-F9B8-D3E4-E8BE-201DC08802F3">
+<createdBy>kutay</createdBy>
+<createdTime>2026-02-05 09:16:46 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>99 CHAR</dataTypeSize>
+<ownDataTypeParameters>99 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CreatedDate" id="3B6D0411-F45B-30D9-75E7-1E5A60A0888B">
+<createdBy>kutay</createdBy>
+<createdTime>2026-02-05 09:18:10 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UpdatedDate" id="7685A1B9-A7F5-9AB9-B218-DCD7E40C02D7">
+<createdBy>kutay</createdBy>
+<createdTime>2026-02-05 09:21:15 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="877054DD-9140-35D6-6C39-537E3AAF1FDD" name="Districts_PK">
+<createdBy>kutay</createdBy>
+<createdTime>2026-02-05 09:16:46 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F10C8217-C089-E83A-953C-39E5249171FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCC204C9-5E8B-BA41-04B8-BF4D1EC516AD" name="Districts_DistrictName_UQ">
+<createdBy>kutay</createdBy>
+<createdTime>2026-02-05 09:17:11 UTC</createdTime>
+<ownerDesignName>iletmen_baydoner_design</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB2D1ACD-F9B8-D3E4-E8BE-201DC08802F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

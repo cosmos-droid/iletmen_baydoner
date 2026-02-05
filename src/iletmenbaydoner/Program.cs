@@ -15,6 +15,9 @@ builder.Services.AddDbContext<iletmenbaydonerDatabaseContext>(options =>
 builder.Services.AddScoped<IClientDal, EfClientRepository>();
 builder.Services.AddScoped<IClientService, ClientManager>();
 
+builder.Services.AddScoped<IDistrictDal, EfDistrictRepository>();
+builder.Services.AddScoped<IDistrictService, DistrictManager>();
+
 builder.Services.AddScoped<IBranchDal, EfBranchRepository>();
 builder.Services.AddScoped<IBranchService, BranchManager>();
 

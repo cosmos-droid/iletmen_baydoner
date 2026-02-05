@@ -29,6 +29,7 @@ namespace iletmenbaydoner.Controllers
             return BadRequest(result.Message);
         }
 
+
         [HttpPost(template: "add")]
         public IActionResult Add(BranchProduct branchProduct)
         {
