@@ -73,6 +73,17 @@ namespace iletmenbaydoner.Controllers
             return BadRequest(result.Message);
         }
 
+        [HttpGet(template: "getallbyoderno")]
+        public IActionResult GetAllByOrderNo(string orderNo)
+        {
+            var result = _orderDetailService.GetOrderDetailsByOrderHeaderNo(orderNo);
+            if (result.Success)
+            {
+                return Ok(result.Data);
+            }
+            return BadRequest(result.Message);
+        }
+
 
     }
 }

@@ -10,7 +10,7 @@ namespace iletmenbaydoner.Business.Abstract
     {
         IDataResult<OrderDetail> GetOrderDetailById(long orderDetailId);
         IDataResult<IList<OrderDetail>> GetAllOrderDetails();
-        IDataResult<IList<OrderDetail>> GetOrderDetailsByOrderNo(string orderNo);
+        IDataResult<IList<OrderDetail>> GetOrderDetailsByOrderHeaderNo(string orderHeaderNo);
         IResult AddOrderDetail(OrderDetail orderDetail);
         IResult UpdateOrderDetail(OrderDetail orderDetail);
         IResult DeleteOrderDetail(OrderDetail orderDetail);

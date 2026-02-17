@@ -75,11 +75,11 @@ namespace iletmenbaydoner.Business.Concrete
             }
         }
 
-        public IDataResult<IList<OrderDetail>> GetOrderDetailsByOrderNo(string orderNo)
+        public IDataResult<IList<OrderDetail>> GetOrderDetailsByOrderHeaderNo(string orderHeaderNo)
         {
             try
             {
-                return new SuccessDataResult<IList<OrderDetail>>(_orderDetailDal.GetAll(o => o.OrderNo == orderNo));
+                return new SuccessDataResult<IList<OrderDetail>>(_orderDetailDal.GetAll(o => o.OrderNo == orderHeaderNo));
             }
             catch (Exception ex)
             {
